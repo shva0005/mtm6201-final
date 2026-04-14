@@ -53,7 +53,12 @@ body{
     font-family: 'Roboto Mono', monospace;
 }
 
-/* HEADER */
+
+/**************** END OF RESET ********************/
+
+
+
+/**************** HEADER SECTION ********************/
 header {
     background-color: rgba(1, 120, 184, 0.5);
     padding: 10px;
@@ -70,7 +75,7 @@ header h1 {
     font-size: xxx-large;
 }
 
-/* NAV */
+/**************** NAVIGATION ********************/
 nav {
     margin-top: 10px;
 }
@@ -100,6 +105,8 @@ nav a {
     font-size: medium;
 }
 
+/**************** SEARCH BAR ********************/
+
 .search {
     font-family: 'Roboto Mono', monospace;
     display: flex;
@@ -114,7 +121,9 @@ nav a {
     margin-left: 10px;
 }
 
-/* IMAGES */
+
+/**************** IMAGES ********************/
+
 .homeimg, #homeimg {
     width: 100vw;
     margin-left: calc(50% - 50vw);
@@ -128,7 +137,8 @@ nav a {
     height: auto;
 }
 
-/* BUTTONS */
+/**************** BUTTONS AND TEXT ********************/
+
 button {
     font-family: 'Roboto Mono', monospace;
     background-color: #00629e;
@@ -176,12 +186,14 @@ hr {
     flex-direction: column;
     gap: 20px;
     padding-bottom: 35px;
+    
 }
 
 #schedulebuttons button{
     flex: 1;
     margin: 0 5px;
 }
+
 
 /* SMALL TEXT UNDER BUTTONS */
 section p {
@@ -460,4 +472,3 @@ footer a img {
     font-weight: 900;
     font-size: larger;
 }
-
