@@ -109,32 +109,25 @@ nav a {
 
 .search {
     font-family: 'Roboto Mono', monospace;
-    display: flex;
-    flex-direction: row;
-    padding-inline: 30px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    display: flex; /*puts the search bar next to the search text */
+    padding-inline: 30px; /* keeps the bar 30px from the left and right */
+    padding-top: 40px; /* adds padding from the bar and the header */
+    padding-bottom: 40px; /* adds padding from the bar to the image */
 }
 
 .search input{
-    width: 100%;
+    width: 100%; /*makes the search bar span the width of the page */
     margin-left: 10px;
 }
 
 
 /**************** IMAGES ********************/
 
-.homeimg, #homeimg {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    padding: 0;
-}
+
 
 .homeimg img, #homeimg img {
     display: block;
-    width: 100%;
-    max-width: none;
-    height: auto;
+    width: 100%; /*ensures the full image is scaled to be fully shown */
 }
 
 /**************** BUTTONS AND TEXT ********************/
@@ -142,16 +135,16 @@ nav a {
 button {
     font-family: 'Roboto Mono', monospace;
     background-color: #00629e;
-    color: white;
+    color: white; /*text colour */
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px auto;
-    border: 1px solid black;
+    border: 1px solid black; /*adds outline around the buttons */
     padding: 25px 30px;
-    font-size: 1.2rem;
+    font-size: 1.2rem; 
     max-width: 100%;
-    cursor: pointer;
+    cursor: pointer; /*switches mouse to pointer icon when hovering */
     border-radius: 50px;
 }
 
@@ -182,7 +175,7 @@ button {
 
 hr {
     border: 0;
-    border-top: 2px solid #000;
+    border-top: 2px solid #000; /* styles the black line */
     width: 100%
 }
 
@@ -197,7 +190,7 @@ hr {
 
 #schedulebuttons button{
     flex: 1;
-    margin: 0 5px;
+    margin: 0 10px; /*tells the buttons how wide to be */ 
 }
 
 section p {
@@ -235,6 +228,8 @@ footer a img {
 
 /**************** ACTIVITIES PAGE ********************/
 
+/*formatting for the available activities button */
+
 .bluetext2 {
     font-family: 'Roboto Mono', monospace;
     background-color: #00629e;
@@ -255,6 +250,8 @@ footer a img {
     margin: 15px;
     border: 2px solid #000;
 }
+
+/* just did the styling for the first box and copy & pasted it since they all look the same */
 
 .swimming {
     font-family: 'Roboto Mono', monospace;
@@ -485,7 +482,7 @@ footer a img {
 @media screen and (min-width:700px) {
     #tablet {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; 
     }
 
     #tablet #homeimg {
@@ -494,8 +491,8 @@ footer a img {
         padding: 10px;
     }
 
-    #tablet section:nth-of-type(2) {
-        grid-column: 1 / 3;
+    #tablet section:nth-of-type(2) { /* looks for the second section tag */
+        grid-column: 1 / 3; 
         grid-row: 2;
     }
     
@@ -547,6 +544,10 @@ footer a img {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .bluetext2 {
+        max-width: 80%;
+    }
+
     .parent {
         grid-column: 1 / 3;
         justify-self: center;
@@ -565,7 +566,9 @@ footer a img {
     }
 }
 
-@media screen and (min-width:1200px) {
+/**************** DESKTOP SCREEN SIZE STYLING ********************/
+
+@media screen and (min-width:1200px) { 
     .bluetext h2 + p {
         grid-column: 1;
         grid-row: 2;
@@ -577,10 +580,10 @@ footer a img {
     }
 
     .bluetext h2:nth-of-type(3) {
-    grid-column: 1 / 3;
-    grid-row: 3;
-    justify-self: center;
-    width: 50%;
+        grid-column: 1 / 3;
+        grid-row: 3;
+        justify-self: center;
+        width: 50%;
 }
 
     .bluetext h2:nth-of-type(3) + p {
@@ -621,7 +624,4 @@ footer a img {
         width: 90%;
     }
     
-
-
-
 }
