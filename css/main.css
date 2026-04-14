@@ -167,10 +167,15 @@ button {
     text-align: center;
 }
 
-.home p {
+#tablet p {
     font-family: 'Roboto Mono', monospace;
     padding: 20px;
     text-align: center;
+}
+
+.homep {
+    text-align: center;
+    margin-inline: 100px;
 }
 
 hr {
@@ -215,7 +220,6 @@ footer a {
 
 footer h3 {
     display: flex;
-    align-items: left;
     font-weight: 900;
     padding-bottom: 20px;
 }
@@ -323,7 +327,7 @@ footer a img {
 }
 
 .para {
-    font-weight: light;
+    font-weight:normal;
     text-align: center;
     margin: 18px;
     line-height: 1.3;
