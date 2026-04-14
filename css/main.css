@@ -226,6 +226,8 @@ footer hr {
     text-align: center;   
 }
 
+
+
 .skating {
     font-family: Roboto, sans-serif;
     background-color: rgba(10, 146, 220, 0.4);
@@ -301,3 +303,10 @@ footer hr {
     width: auto;
     padding: 30px 100px;
 }
+
+.facility img {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    display: block;
+}
+
